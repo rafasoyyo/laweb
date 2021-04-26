@@ -28,4 +28,4 @@ jobs:
           TARGET: ${{ secrets.REMOTE_TARGET }}
           EXCLUDE: "/dist/, /node_modules/"
     - name: Restart pm2
-      run: sh ./laweb/reload.sh
+      run: sh /home/rafa/laweb/reload.sh
