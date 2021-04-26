@@ -28,4 +28,4 @@ jobs:
           TARGET: ${{ secrets.REMOTE_TARGET }}
           EXCLUDE: "/dist/, /node_modules/"
     - name: Restart pm2
-      run: pm2 restart laweb
+      run: env $(cat .env | grep -v \"#\" | xargs) pm2 restart laweb
