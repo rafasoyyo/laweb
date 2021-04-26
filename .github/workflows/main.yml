@@ -11,17 +11,17 @@ jobs:
         steps:
         - uses: actions/checkout@v1
         - name: Install Node.js
-            uses: actions/setup-node@v1
-            with:
-                node-version: '14.x'
+          uses: actions/setup-node@v1
+          with:
+            node-version: '14.x'
         - name: Install npm dependencies
-            run: npm install
+          run: npm install
         - name: Run build task
-            run: npm run build --if-present
+          run: npm run build --if-present
         - name: Deploy to Server
-            uses: appleboy/ssh-action@master
-            with:
-                host: ${{ secrets.REMOTE_HOST }}
-                username: ${{ secrets.REMOTE_USER }}
-                key: ${{ secrets.SERVER_SSH_KEY }}
-                script: pm2 restart node-app
+          uses: appleboy/ssh-action@master
+          with:
+            host: ${{ secrets.REMOTE_HOST }}
+            username: ${{ secrets.REMOTE_USER }}
+            key: ${{ secrets.SERVER_SSH_KEY }}
+            script: pm2 restart node-app
