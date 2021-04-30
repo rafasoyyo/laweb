@@ -34,4 +34,4 @@ jobs:
         username: ${{ secrets.REMOTE_USER }}
         passphrase: ${{ secrets.REMOTE_TARGET }}
         password: ${{ secrets.REMOTE_PASSWORD }}
-    privateKey: ${{ secrets.PRIVATE_KEY}}
+        privateKey: ''
