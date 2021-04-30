@@ -26,3 +26,12 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ secrets.REMOTE_TARGET }}
           EXCLUDE: "/dist/, /node_modules/"
+    - name: Reload PM2
+      uses: garygrossgarten/github-action-ssh@release
+      with:
+        command: pm2 reload all
+        host: ${{ secrets.REMOTE_HOST }}
+        username: ${{ secrets.REMOTE_USER }}
+        passphrase: ${{ secrets.REMOTE_TARGET }}
+        password: ${{ secrets.REMOTE_PASSWORD }}
+        privateKey: ''
