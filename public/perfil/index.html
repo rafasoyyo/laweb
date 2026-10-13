@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Rafael Hernández Navarro · Engineering Team Lead</title>
+    <meta name="description" content="Engineering Team Lead especializado en microservicios y aplicaciones modernas. Desarrollo de software desde 2012: de apps híbridas a CTO, backend y full stack. Valencia.">
+    <meta name="theme-color" content="#111519">
+    <meta name="color-scheme" content="dark">
+    <link rel="canonical" href="https://laweb.derafa.es/perfil/">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicon.ico" sizes="48x48">
+    <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Rafael Hernández Navarro">
+    <meta property="og:title" content="Rafael Hernández Navarro · Engineering Team Lead">
+    <meta property="og:description" content="Microservicios, apps modernas y equipos de ingeniería. Desarrollo de software desde 2012.">
+    <meta property="og:url" content="https://laweb.derafa.es/perfil/">
+    <meta property="og:image" content="https://laweb.derafa.es/perfil/img/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Retrato en blanco y negro de Rafael Hernández Navarro con gafas de sol">
+    <meta property="profile:first_name" content="Rafael">
+    <meta property="profile:last_name" content="Hernández Navarro">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rafael Hernández Navarro · Engineering Team Lead">
+    <meta name="twitter:description" content="Microservicios, apps modernas y equipos de ingeniería. Desarrollo de software desde 2012.">
+    <meta name="twitter:image" content="https://laweb.derafa.es/perfil/img/og.jpg">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rafael Hernández Navarro",
+        "jobTitle": "Engineering Team Lead",
+        "worksFor": { "@type": "Organization", "name": "Hiberus" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Valencia", "addressCountry": "ES" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad de Sevilla" },
+        "knowsLanguage": ["es", "en"],
+        "url": "https://laweb.derafa.es/perfil/",
+        "image": "https://laweb.derafa.es/perfil/img/og.jpg",
+        "sameAs": ["https://www.linkedin.com/in/rafael-hernandez-navarro/"]
+    }
+    </script>
+
+    <link rel="preload" href="fonts/gloock-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/hanken-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="modulepreload" href="js/main.js">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="nav" id="nav">
+        <a class="nav__brand" href="#inicio">
+            <svg class="nav__mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false">
+                <path d="M3 24 C 10 24, 11 9, 18 9 S 25 14, 29 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <circle cx="18" cy="9" r="3.4" fill="currentColor"/>
+                <circle cx="3.5" cy="24" r="1.6" fill="currentColor"/>
+            </svg>
+            <span>Rafael Hernández Navarro</span>
+        </a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span class="nav__toggle-label">Menú</span>
+            <span class="nav__toggle-bars" aria-hidden="true"></span>
+        </button>
+        <nav class="nav__links" id="nav-links" aria-label="Secciones">
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#cifras">Cifras</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto" class="nav__cta">Contacto</a></li>
+            </ul>
+            <p class="nav__foot" aria-hidden="true">Valencia, España · Engineering Team Lead</p>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <div class="stage" id="stage">
+            <div class="stage__sticky" aria-hidden="true">
+                <canvas class="stage__canvas" id="scene" width="16" height="9"></canvas>
+                <picture class="stage__fallback">
+                    <source srcset="img/escena-fallback.avif" type="image/avif">
+                    <img src="img/escena-fallback.webp" alt="" width="1600" height="785" decoding="async" loading="lazy">
+                </picture>
+                <div class="hud" id="hud">
+                    <output class="hud__year" id="hud-year">2012</output>
+                    <div class="hud__rule"><span class="hud__fill" id="hud-fill"></span></div>
+                    <p class="hud__label" id="hud-label">Inicio del recorrido</p>
+                </div>
+                <div class="node-tip" id="node-tip" role="presentation" hidden>
+                    <p class="node-tip__when"></p>
+                    <p class="node-tip__role"></p>
+                    <p class="node-tip__co"></p>
+                </div>
+            </div>
+
+            <div class="stage__content">
+                <section class="hero" id="inicio" aria-labelledby="nombre">
+                    <p class="eyebrow">Valencia, España</p>
+                    <h1 class="hero__name" id="nombre">
+                        <span class="hero__line">Rafael</span>
+                        <span class="hero__line">Hernández</span>
+                        <span class="hero__line">Navarro</span>
+                    </h1>
+                    <p class="hero__role" lang="en">Engineering Team Lead | Microservices &amp; Modern Apps Specialist at Hiberus</p>
+                    <div class="hero__foot">
+                        <p class="hero__motto" lang="en">Impossible tasks are new opportunities, let's code them!!!</p>
+                        <a class="hero__cue" href="#sobre-mi"><span>Recorre la trayectoria</span><i aria-hidden="true"></i></a>
+                    </div>
+                </section>
+
+                <section class="about" id="sobre-mi" aria-labelledby="h-sobre">
+                    <div class="panel panel--wide" data-reveal>
+                        <p class="label">01 · Sobre mí</p>
+                        <h2 class="h2" id="h-sobre">Software desde 2012, equipos desde 2016.</h2>
+                        <div class="about__body" id="about-body"></div>
+                    </div>
+                </section>
+
+                <section class="exp" id="experiencia" aria-labelledby="h-exp">
+                    <header class="exp__head panel" data-reveal>
+                        <p class="label">02 · Experiencia</p>
+                        <h2 class="h2" id="h-exp">Once etapas en una línea.</h2>
+                        <p class="lede">Cada nodo de la escena es un puesto; su tamaño depende de lo que duró. Desplázate o toca un nodo para viajar entre ellos.</p>
+                    </header>
+                    <ol class="exp__list" id="exp-list"></ol>
+                </section>
+            </div>
+        </div>
+
+        <section class="block skills" id="skills" aria-labelledby="h-skills">
+            <div class="wrap">
+                <header class="block__head" data-reveal>
+                    <p class="label">03 · Skills</p>
+                    <h2 class="h2" id="h-skills">Qué he usado y dónde.</h2>
+                    <p class="lede">Elige una etapa de mi carrera y se iluminan las aptitudes que LinkedIn asocia a ella; o pasa por una aptitud para ver en qué puestos aparece. El punto de cada una indica en cuántas etapas figura; si está hueco, el perfil no lo cuantifica.</p>
+                </header>
+                <div class="matrix" id="matrix"></div>
+            </div>
+        </section>
+
+        <section class="block edu" id="formacion" aria-labelledby="h-edu">
+            <div class="wrap">
+                <header class="block__head" data-reveal>
+                    <p class="label">04 · Educación y formación</p>
+                    <h2 class="h2" id="h-edu">De la ingeniería química al código.</h2>
+                </header>
+                <div class="edu__grid" id="edu-grid"></div>
+            </div>
+        </section>
+
+        <section class="block figures" id="cifras" aria-labelledby="h-fig">
+            <div class="wrap">
+                <header class="block__head" data-reveal>
+                    <p class="label">05 · Logros y cifras</p>
+                    <h2 class="h2" id="h-fig">Números del perfil.</h2>
+                </header>
+                <dl class="figures__grid" id="figures"></dl>
+                <div class="projects" id="projects"></div>
+            </div>
+        </section>
+
+        <section class="block gallery" id="galeria" aria-labelledby="h-gal">
+            <div class="wrap">
+                <header class="block__head" data-reveal>
+                    <p class="label">06 · Galería</p>
+                    <h2 class="h2" id="h-gal">Fuera del editor.</h2>
+                </header>
+                <ul class="gallery__grid" id="gallery"></ul>
+            </div>
+        </section>
+
+        <section class="block contact" id="contacto" aria-labelledby="h-contact">
+            <div class="wrap">
+                <header class="block__head" data-reveal>
+                    <p class="label">07 · Contacto</p>
+                    <h2 class="h2 h2--xl" id="h-contact">¿Tienes una tarea imposible?</h2>
+                    <p class="lede">Cuéntamela. Respondo por correo o por LinkedIn.</p>
+                </header>
+                <ul class="contact__links" id="contact-links"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <div class="wrap foot__row">
+            <p>Rafael Hernández Navarro · Valencia</p>
+            <p>HTML, CSS y Three.js a mano. Sin frameworks.</p>
+            <p><a href="#inicio">Volver arriba ↑</a></p>
+        </div>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+        <form method="dialog"><button class="lightbox__close" aria-label="Cerrar">Cerrar ×</button></form>
+        <img alt="" id="lightbox-img" width="1200" height="800">
+        <p class="lightbox__cap" id="lightbox-cap"></p>
+    </dialog>
+
+    <noscript>
+        <p class="noscript">Esta web necesita JavaScript para mostrar la trayectoria. Perfil completo en <a href="https://www.linkedin.com/in/rafael-hernandez-navarro/">LinkedIn</a>.</p>
+    </noscript>
+</body>
+</html>
