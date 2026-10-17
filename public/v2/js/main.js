@@ -1,5 +1,6 @@
 import { renderAll } from './render.js';
 import { initNav, initReveal, initMatrix, initGallery } from './ui.js';
+import { initAnalytics } from './analytics.js';
 
 document.documentElement.classList.add('reveal-ready');
 renderAll();
@@ -7,6 +8,7 @@ initNav();
 initReveal();
 initMatrix();
 initGallery();
+initAnalytics();
 
 // La escena 3D se carga aparte: el texto del hero ya es visible y no depende de Three.js.
 const stage = document.getElementById('stage');
