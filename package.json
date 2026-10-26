@@ -4,6 +4,9 @@
     "private": true,
     "scripts": {
         "start": "node ./bin/www",
+        "build:css": "node ./bin/build-css.js",
+        "build:html": "node --no-warnings ./bin/prerender.js",
+        "predeploy": "npm run build:css && npm run build:html",
         "deploy": "firebase deploy --only hosting"
     },
     "dependencies": {
