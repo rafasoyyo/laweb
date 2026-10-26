@@ -19,7 +19,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(helmet({
     contentSecurityPolicy: {
         directives: {
-            defaultSrc: ["'self'"]
+            defaultSrc: ["'self'"],
+            // Google Analytics (solo se carga tras aceptar el aviso de cookies)
+            scriptSrc: ["'self'", "https://www.googletagmanager.com"],
+            connectSrc: ["'self'", "https://*.google-analytics.com", "https://*.analytics.google.com", "https://www.googletagmanager.com"],
+            imgSrc: ["'self'", "data:", "https://*.google-analytics.com", "https://www.googletagmanager.com"]
         }
     }
 }));

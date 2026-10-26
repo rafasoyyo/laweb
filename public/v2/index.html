@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Rafael Hernández Navarro · Engineering Team Lead</title>
+    <meta name="description" content="Engineering Team Lead especializado en microservicios y aplicaciones modernas. Desarrollo de software desde 2012: de apps híbridas a CTO, backend y full stack. Valencia.">
+    <meta name="theme-color" content="#111519">
+    <meta name="color-scheme" content="dark">
+    <link rel="canonical" href="https://laweb.derafa.es/perfil/">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicon.ico" sizes="48x48">
+    <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Rafael Hernández Navarro">
+    <meta property="og:title" content="Rafael Hernández Navarro · Engineering Team Lead">
+    <meta property="og:description" content="Microservicios, apps modernas y equipos de ingeniería. Desarrollo de software desde 2012.">
+    <meta property="og:url" content="https://laweb.derafa.es/perfil/">
+    <meta property="og:image" content="https://laweb.derafa.es/perfil/img/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Retrato en blanco y negro de Rafael Hernández Navarro con gafas de sol">
+    <meta property="profile:first_name" content="Rafael">
+    <meta property="profile:last_name" content="Hernández Navarro">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rafael Hernández Navarro · Engineering Team Lead">
+    <meta name="twitter:description" content="Microservicios, apps modernas y equipos de ingeniería. Desarrollo de software desde 2012.">
+    <meta name="twitter:image" content="https://laweb.derafa.es/perfil/img/og.jpg">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rafael Hernández Navarro",
+        "jobTitle": "Engineering Team Lead",
+        "worksFor": { "@type": "Organization", "name": "Hiberus" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Valencia", "addressCountry": "ES" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad de Sevilla" },
+        "knowsLanguage": ["es", "en"],
+        "url": "https://laweb.derafa.es/perfil/",
+        "image": "https://laweb.derafa.es/perfil/img/og.jpg",
+        "sameAs": ["https://www.linkedin.com/in/rafael-hernandez-navarro/"]
+    }
+    </script>
+
+    <link rel="preload" href="fonts/gloock-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/hanken-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="modulepreload" href="js/main.js">
+    <link rel="modulepreload" href="js/render.js">
+    <link rel="modulepreload" href="js/ui.js">
+    <link rel="modulepreload" href="js/analytics.js">
+    <link rel="modulepreload" href="js/data.js">
+    <link rel="modulepreload" href="js/util.js">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="nav" id="nav">
+        <a class="nav__brand" href="#inicio">
+            <svg class="nav__mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false">
+                <path d="M3 24 C 10 24, 11 9, 18 9 S 25 14, 29 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <circle cx="18" cy="9" r="3.4" fill="currentColor"/>
+                <circle cx="3.5" cy="24" r="1.6" fill="currentColor"/>
+            </svg>
+            <span>Rafael Hernández Navarro</span>
+        </a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span class="nav__toggle-label">Menú</span>
+            <span class="nav__toggle-bars" aria-hidden="true"></span>
+        </button>
+        <nav class="nav__links" id="nav-links" aria-label="Secciones">
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#cifras">Cifras</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto" class="nav__cta">Contacto</a></li>
+            </ul>
+            <p class="nav__foot" aria-hidden="true">Valencia, España · Engineering Team Lead</p>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <div class="stage" id="stage">
+            <div class="stage__sticky" aria-hidden="true">
+                <canvas class="stage__canvas" id="scene" width="16" height="9"></canvas>
+                <picture class="stage__fallback">
+                    <source srcset="img/escena-fallback.avif" type="image/avif">
+                    <img src="img/escena-fallback.webp" alt="" width="1600" height="785" decoding="async" loading="lazy">
+                </picture>
+                <div class="hud" id="hud">
+                    <output class="hud__year" id="hud-year">2012</output>
+                    <div class="hud__rule"><span class="hud__fill" id="hud-fill"></span></div>
+                    <p class="hud__label" id="hud-label">Inicio del recorrido</p>
+                </div>
+                <div class="node-tip" id="node-tip" role="presentation" hidden>
+                    <p class="node-tip__when"></p>
+                    <p class="node-tip__role"></p>
+                    <p class="node-tip__co"></p>
+                </div>
+            </div>
+
+            <div class="stage__content">
+                <section class="hero" id="inicio" aria-labelledby="nombre">
+                    <p class="eyebrow">Valencia, España</p>
+                    <h1 class="hero__name" id="nombre">
+                        <span class="hero__line">Rafael</span>
+                        <span class="hero__line">Hernández</span>
+                        <span class="hero__line">Navarro</span>
+                    </h1>
+                    <p class="hero__role" lang="en">Engineering Team Lead | Microservices &amp; Modern Apps Specialist at Hiberus</p>
+                    <div class="hero__foot">
+                        <p class="hero__motto" lang="en">Impossible tasks are new opportunities, let's code them!!!</p>
+                        <a class="hero__cue" href="#sobre-mi"><span>Recorre la trayectoria</span><i aria-hidden="true"></i></a>
+                    </div>
+                </section>
+
+                <section class="about" id="sobre-mi" aria-labelledby="h-sobre">
+                    <div class="panel panel--wide" data-reveal>
+                        <p class="label">01 · Sobre mí</p>
+                        <h2 class="h2" id="h-sobre">Software desde 2012, equipos desde 2016.</h2>
+                        <div class="about__body" id="about-body"><!--pr:about-body--><p>Llevo desde 2012 construyendo software. Hoy coordino equipos de ingeniería en Hiberus, especializados en diseñar, desarrollar y modernizar aplicaciones basadas en microservicios y en soluciones Cloud Native.</p><p>Empecé como desarrollador independiente de apps multiplataforma, pasé por Joinity e Influencity y fui CTO y Development Lead en QUIBIM. Después trabajé en Oramon, nexum, Giesecke+Devrient y Fourvenues, entre el full stack, Salesforce Commerce Cloud y el backend.</p><p>Mi formación de base es Ingeniería Técnica Industrial (Química Industrial) y un máster en Diseño de Productos e Instalaciones, los dos en la Universidad de Sevilla.</p><p class="about__quote" lang="en">Impossible tasks are new opportunities, let&#39;s code them!!!</p><!--/pr:about-body--></div>
+                    </div>
+                </section>
+
+                <section class="exp" id="experiencia" aria-labelledby="h-exp">
+                    <header class="exp__head panel" data-reveal>
+                        <p class="label">02 · Experiencia</p>
+                        <h2 class="h2" id="h-exp">Once etapas en una línea.</h2>
+                        <p class="lede">Cada nodo de la escena es un puesto; su tamaño depende de lo que duró. Desplázate o toca un nodo para viajar entre ellos.</p>
+                    </header>
+                    <ol class="exp__list" id="exp-list"><!--pr:exp-list-->
+        <li class="xp" data-index="0" data-id="independiente" tabindex="0" aria-label="Software Developer, Programador independiente">
+            <article class="panel" data-reveal>
+                <p class="xp__when">
+                    <span>jul. 2012 – jul. 2014</span>
+                    <span>2 años 1 mes</span>
+                    
+                </p>
+                <h3 class="xp__role">Software Developer</h3>
+                <p class="xp__co">Programador independiente <span>· Sevilla</span></p>
+                
+                <p class="xp__sum">Desarrollo de aplicaciones multiplataforma con HTML5, JavaScript y CSS sobre PhoneGap, jQuery Mobile, iScroll y las APIs de Google Maps y Facebook. Diseño, desarrollo y publicación de una app multiplataforma de turismo y servicios de Cortegana.</p>
+                <ul class="xp__stack"><li>CSS3</li><li>PhoneGap</li><li>jQuery Mobile</li></ul>
+            </article>
+        </li>
+        <li class="xp" data-index="1" data-id="geographica" tabindex="0" aria-label="Auxiliar de programación (prácticas del máster), Geographica">
+            <article class="panel" data-reveal>
+                <p class="xp__when">
+                    <span>abr. 2014 – may. 2014</span>
+                    <span>2 meses</span>
+                    
+                </p>
+                <h3 class="xp__role">Auxiliar de programación (prácticas del máster)</h3>
+                <p class="xp__co">Geographica</p>
+                
+                <p class="xp__sum">Prototipo de app para un nuevo servicio dirigido a administraciones públicas locales, con HTML5, JavaScript, CSS y PhoneGap.</p>
+                <ul class="xp__stack"><li>PhoneGap</li><li>Desarrollo del front-end</li></ul>
+            </article>
+        </li>
+        <li class="xp" data-index="2" data-id="joinity" tabindex="0" aria-label="Frontend Developer, Joinity">
+            <article class="panel" data-reveal>
+                <p class="xp__when">
+                    <span>jul. 2014 – feb. 2015</span>
+                    <span>8 meses</span>
+                    
+                </p>
+                <h3 class="xp__role">Frontend Developer</h3>
+                <p class="xp__co">Joinity <span>· Comunidad Valenciana</span></p>
+                
+                
+                <ul class="xp__stack"><li>CSS3</li><li>Git</li><li>jQuery</li></ul>
+            </article>
+        </li>
+        <li class="xp" data-index="3" data-id="influencity" tabindex="0" aria-label="Frontend Developer, Influencity">
+            <article class="panel" data-reveal>
+                <p class="xp__when">
+                    <span>feb. 2015 – jul. 2015</span>
+                    <span>6 meses</span>
+                    
+                </p>
+                <h3 class="xp__role">Frontend Developer</h3>
+                <p class="xp__co">Influencity <span>· Comunidad Valenciana</span></p>
+                
+                
+                <ul class="xp__stack"><li>CSS3</li><li>Git</li><li>jQuery</li></ul>
+            </article>
+        </li>
+        <li class="xp" data-index="4" data-id="quibim-front" tabindex="0" aria-label="FrontEnd Developer, QUIBIM">
+            <article class="panel" data-reveal>
+                <p class="xp__when">
+                    <span>ago. 2015 – jun. 2016</span>
+                    <span>11 meses</span>
+                    
+                </p>
+                <h3 class="xp__role">FrontEnd Developer</h3>
+                <p class="xp__co">QUIBIM <span>· Comunidad Valenciana</span></p>
+                
+                
+                <ul class="xp__stack"><li>Windows Azure</li><li>Angular</li></ul>
+            </article>
+        </li>
+        <li class="xp" data-index="5" data-id="quibim-cto" tabindex="0" aria-label="CTO &amp; Development Lead, QUIBIM">
+            <article class="panel" data-reveal>
+                <p class="xp__when">
+                    <span>jun. 2016 – feb. 2019</span>
+                    <span>2 años 9 meses</span>
+                    
+                </p>
+                <h3 class="xp__role">CTO &amp; Development Lead</h3>
+                <p class="xp__co">QUIBIM <span>· Valencia</span></p>
+                
+                
+                <ul class="xp__stack"><li>Windows Azure</li><li>Express.js</li><li>MongoDB</li><li>AngularJS</li></ul>
+            </article>
+        </li>
+        <li class="xp" data-index="6" data-id="oramon" tabindex="0" aria-label="Full Stack Developer, Oramon">
+            <article class="panel" data-reveal>
+                <p class="xp__when">
+                    <span>mar. 2019 – jun. 2020</span>
+                    <span>1 año 4 meses</span>
+                    
+                </p>
+                <h3 class="xp__role">Full Stack Developer</h3>
+                <p class="xp__co">Oramon <span>· Valencia</span></p>
+                
+                
+                <ul class="xp__stack"><li>PostgreSQL</li><li>Express.js</li></ul>
+            </article>
+        </li>
+        <li class="xp" data-index="7" data-id="nexum" tabindex="0" aria-label="Salesforce Commerce Cloud Developer, nexum AG">
+            <article class="panel" data-reveal>
+                <p class="xp__when">
+                    <span>jun. 2020 – ene. 2023</span>
+                    <span>2 años 8 meses</span>
+                    
+                </p>
+                <h3 class="xp__role">Salesforce Commerce Cloud Developer</h3>
+                <p class="xp__co">nexum AG</p>
+                
+                
+                <ul class="xp__stack"><li>Express.js</li><li>CSS3</li><li>Salesforce Commerce Cloud (SFCC)</li></ul>
+            </article>
+        </li>
+        <li class="xp" data-index="8" data-id="gd" tabindex="0" aria-label="Full Stack Developer, Giesecke+Devrient">
+            <article class="panel" data-reveal>
+                <p class="xp__when">
+                    <span>ene. 2023 – oct. 2025</span>
+                    <span>2 años 10 meses</span>
+                    
+                </p>
+                <h3 class="xp__role">Full Stack Developer</h3>
+                <p class="xp__co">Giesecke+Devrient <span>· Valencia · En remoto</span></p>
+                
+                
+                <ul class="xp__stack"><li>PostgreSQL</li><li>Amazon Web Services (AWS)</li><li>Apache Kafka</li><li>NestJS</li></ul>
+            </article>
+        </li>
+        <li class="xp" data-index="9" data-id="fourvenues" tabindex="0" aria-label="Backend Developer, Fourvenues">
+            <article class="panel" data-reveal>
+                <p class="xp__when">
+                    <span>oct. 2025 – jun. 2026</span>
+                    <span>9 meses</span>
+                    
+                </p>
+                <h3 class="xp__role">Backend Developer</h3>
+                <p class="xp__co">Fourvenues <span>· Comunidad Valenciana</span></p>
+                
+                
+                <ul class="xp__stack"><li>Node.js</li><li>Express.js</li><li>Inteligencia artificial</li><li>RabbitMQ</li><li>Redis</li><li>fastify</li></ul>
+            </article>
+        </li>
+        <li class="xp" data-index="10" data-id="hiberus" tabindex="0" aria-label="Engineering Team Lead, hiberus">
+            <article class="panel" data-reveal>
+                <p class="xp__when">
+                    <span>jun. 2026 – actualidad</span>
+                    <span>5 meses</span>
+                    <span class="xp__badge">Actual</span>
+                </p>
+                <h3 class="xp__role">Engineering Team Lead</h3>
+                <p class="xp__co">hiberus <span>· Valencia · Híbrido</span></p>
+                <p class="xp__sum" lang="en">Engineering Team Lead | Microservices &amp; Modern Apps Specialist at Hiberus</p>
+                <p class="xp__sum">Coordinación de equipos de ingeniería especializados en el diseño, desarrollo y modernización de aplicaciones basadas en arquitecturas de microservicios y soluciones Cloud Native.</p>
+                <ul class="xp__stack"><li>NestJS</li><li>MongoDB</li><li>Amazon Web Services (AWS)</li><li>Desarrollo Dirigido por Especificaciones (SDD)</li><li>Espíritu de equipo</li></ul>
+            </article>
+        </li><!--/pr:exp-list--></ol>
+                </section>
+            </div>
+        </div>
+
+        <section class="block skills" id="skills" aria-labelledby="h-skills">
+            <div class="wrap">
+                <header class="block__head" data-reveal>
+                    <p class="label">03 · Skills</p>
+                    <h2 class="h2" id="h-skills">Qué he usado y dónde.</h2>
+                    <p class="lede">Elige una etapa de mi carrera y se iluminan las aptitudes que LinkedIn asocia a ella; o pasa por una aptitud para ver en qué puestos aparece. El punto de cada una indica en cuántas etapas figura; si está hueco, el perfil no lo cuantifica.</p>
+                </header>
+                <div class="matrix" id="matrix"><!--pr:matrix-->
+        <div>
+            <ol class="matrix__roles" id="matrix-roles" aria-label="Puestos, ordenados en el tiempo y con ancho proporcional a su duración"><li><button class="matrix__role" type="button" aria-pressed="false" data-id="independiente" data-kind="own" data-m="25" aria-label="Independiente · Software Developer · 2012. jul. 2012 – jul. 2014"><span class="matrix__name" aria-hidden="true">Independiente<em> · Software Developer · 2012</em></span></button></li><li><button class="matrix__role" type="button" aria-pressed="false" data-id="geographica" data-kind="intern" data-m="2" aria-label="Geographica · Auxiliar de programación (prácticas del máster) · 2014. abr. 2014 – may. 2014"><span class="matrix__name" aria-hidden="true">Geographica<em> · Auxiliar de programación (prácticas del máster) · 2014</em></span></button></li><li><button class="matrix__role" type="button" aria-pressed="false" data-id="joinity" data-kind="dev" data-m="8" aria-label="Joinity · Frontend Developer · 2014. jul. 2014 – feb. 2015"><span class="matrix__name" aria-hidden="true">Joinity<em> · Frontend Developer · 2014</em></span></button></li><li><button class="matrix__role" type="button" aria-pressed="false" data-id="influencity" data-kind="dev" data-m="6" aria-label="Influencity · Frontend Developer · 2015. feb. 2015 – jul. 2015"><span class="matrix__name" aria-hidden="true">Influencity<em> · Frontend Developer · 2015</em></span></button></li><li><button class="matrix__role" type="button" aria-pressed="false" data-id="quibim-front" data-kind="dev" data-m="11" aria-label="QUIBIM · FrontEnd Developer · 2015. ago. 2015 – jun. 2016"><span class="matrix__name" aria-hidden="true">QUIBIM<em> · FrontEnd Developer · 2015</em></span></button></li><li><button class="matrix__role" type="button" aria-pressed="false" data-id="quibim-cto" data-kind="cto" data-m="33" aria-label="QUIBIM · CTO &amp; Development Lead · 2016. jun. 2016 – feb. 2019"><span class="matrix__name" aria-hidden="true">QUIBIM<em> · CTO &amp; Development Lead · 2016</em></span></button></li><li><button class="matrix__role" type="button" aria-pressed="false" data-id="oramon" data-kind="dev" data-m="16" aria-label="Oramon · Full Stack Developer · 2019. mar. 2019 – jun. 2020"><span class="matrix__name" aria-hidden="true">Oramon<em> · Full Stack Developer · 2019</em></span></button></li><li><button class="matrix__role" type="button" aria-pressed="false" data-id="nexum" data-kind="dev" data-m="32" aria-label="nexum AG · Salesforce Commerce Cloud Developer · 2020. jun. 2020 – ene. 2023"><span class="matrix__name" aria-hidden="true">nexum AG<em> · Salesforce Commerce Cloud Developer · 2020</em></span></button></li><li><button class="matrix__role" type="button" aria-pressed="false" data-id="gd" data-kind="dev" data-m="34" aria-label="Giesecke+Devrient · Full Stack Developer · 2023. ene. 2023 – oct. 2025"><span class="matrix__name" aria-hidden="true">Giesecke+Devrient<em> · Full Stack Developer · 2023</em></span></button></li><li><button class="matrix__role" type="button" aria-pressed="false" data-id="fourvenues" data-kind="dev" data-m="9" aria-label="Fourvenues · Backend Developer · 2025. oct. 2025 – jun. 2026"><span class="matrix__name" aria-hidden="true">Fourvenues<em> · Backend Developer · 2025</em></span></button></li><li><button class="matrix__role" type="button" aria-pressed="false" data-id="hiberus" data-kind="lead" data-m="5" aria-label="hiberus · Engineering Team Lead · 2026. jun. 2026 – actualidad"><span class="matrix__name" aria-hidden="true">hiberus<em> · Engineering Team Lead · 2026</em></span></button></li></ol>
+            <div class="matrix__axis" aria-hidden="true"><span>2012</span><span>2026</span></div>
+        </div>
+        <p class="matrix__detail" id="matrix-detail" aria-live="polite"><strong>Elige un puesto o una aptitud</strong><span>Los datos son los que LinkedIn asocia a cada etapa.</span></p>
+        <div class="matrix__groups">
+        <section class="group" aria-label="Backend y datos">
+            <h3 class="group__title">Backend y datos <span class="group__count">12</span></h3>
+            <ul class="group__list">
+                
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Node.js" data-u="3">
+                    <span class="skill__dot" aria-hidden="true"></span>Node.js</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Express.js" data-u="4">
+                    <span class="skill__dot" aria-hidden="true"></span>Express.js</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="fastify" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>fastify</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="NestJS" data-u="2">
+                    <span class="skill__dot" aria-hidden="true"></span>NestJS</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="PostgreSQL" data-u="2">
+                    <span class="skill__dot" aria-hidden="true"></span>PostgreSQL</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="MongoDB" data-u="3">
+                    <span class="skill__dot" aria-hidden="true"></span>MongoDB</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="Redis" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>Redis</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="RabbitMQ" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>RabbitMQ</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="Apache Kafka" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>Apache Kafka</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Microservicios" data-u="2">
+                    <span class="skill__dot" aria-hidden="true"></span>Microservicios</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Desarrollo de API" data-u="3">
+                    <span class="skill__dot" aria-hidden="true"></span>Desarrollo de API</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="JSON" data-u="7">
+                    <span class="skill__dot" aria-hidden="true"></span>JSON</button></li>
+            </ul>
+        </section>
+        <section class="group" aria-label="Frontend y web">
+            <h3 class="group__title">Frontend y web <span class="group__count">13</span></h3>
+            <ul class="group__list">
+                
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="JavaScript" data-u="6">
+                    <span class="skill__dot" aria-hidden="true"></span>JavaScript</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="TypeScript" data-u="3">
+                    <span class="skill__dot" aria-hidden="true"></span>TypeScript</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Angular" data-u="2">
+                    <span class="skill__dot" aria-hidden="true"></span>Angular</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="AngularJS" data-u="2">
+                    <span class="skill__dot" aria-hidden="true"></span>AngularJS</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="React.js" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>React.js</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Redux.js" data-u="2">
+                    <span class="skill__dot" aria-hidden="true"></span>Redux.js</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="HTML5" data-u="3">
+                    <span class="skill__dot" aria-hidden="true"></span>HTML5</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="CSS3" data-u="7">
+                    <span class="skill__dot" aria-hidden="true"></span>CSS3</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="jQuery" data-u="4">
+                    <span class="skill__dot" aria-hidden="true"></span>jQuery</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="jQuery Mobile" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>jQuery Mobile</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="PhoneGap" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>PhoneGap</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Desarrollo del front-end" data-u="7">
+                    <span class="skill__dot" aria-hidden="true"></span>Desarrollo del front-end</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="Aplicaciones web progresivas (PWA)" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>Aplicaciones web progresivas (PWA)</button></li>
+            </ul>
+        </section>
+        <section class="group" aria-label="Cloud y herramientas">
+            <h3 class="group__title">Cloud y herramientas <span class="group__count">6</span></h3>
+            <ul class="group__list">
+                
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Amazon Web Services (AWS)" data-u="2">
+                    <span class="skill__dot" aria-hidden="true"></span>Amazon Web Services (AWS)</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Docker" data-u="2">
+                    <span class="skill__dot" aria-hidden="true"></span>Docker</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Windows Azure" data-u="2">
+                    <span class="skill__dot" aria-hidden="true"></span>Windows Azure</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="Firebase" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>Firebase</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Git" data-u="7">
+                    <span class="skill__dot" aria-hidden="true"></span>Git</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="JIRA" data-u="3">
+                    <span class="skill__dot" aria-hidden="true"></span>JIRA</button></li>
+            </ul>
+        </section>
+        <section class="group" aria-label="Equipos y método">
+            <h3 class="group__title">Equipos y método <span class="group__count">9</span></h3>
+            <ul class="group__list">
+                
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Clean code" data-u="5">
+                    <span class="skill__dot" aria-hidden="true"></span>Clean code</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Scrum" data-u="3">
+                    <span class="skill__dot" aria-hidden="true"></span>Scrum</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="Espíritu de equipo" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>Espíritu de equipo</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Liderazgo de equipos" data-u="2">
+                    <span class="skill__dot" aria-hidden="true"></span>Liderazgo de equipos</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Dirección de equipos" data-u="2">
+                    <span class="skill__dot" aria-hidden="true"></span>Dirección de equipos</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="Liderazgo" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>Liderazgo</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="Gestión de proyectos" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>Gestión de proyectos</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Desarrollo de productos" data-u="2">
+                    <span class="skill__dot" aria-hidden="true"></span>Desarrollo de productos</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Desarrollo de software" data-u="9">
+                    <span class="skill__dot" aria-hidden="true"></span>Desarrollo de software</button></li>
+            </ul>
+        </section>
+        <section class="group" aria-label="IA y especificaciones">
+            <h3 class="group__title">IA y especificaciones <span class="group__count">2</span></h3>
+            <ul class="group__list">
+                
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="Inteligencia artificial" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>Inteligencia artificial</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="Desarrollo Dirigido por Especificaciones (SDD)" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>Desarrollo Dirigido por Especificaciones (SDD)</button></li>
+            </ul>
+        </section>
+        <section class="group" aria-label="Producto y negocio">
+            <h3 class="group__title">Producto y negocio <span class="group__count">5</span></h3>
+            <ul class="group__list">
+                
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="Salesforce Commerce Cloud (SFCC)" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>Salesforce Commerce Cloud (SFCC)</button></li>
+                <li><button class="skill" type="button" aria-pressed="false" data-skill="Comercio electrónico" data-u="2">
+                    <span class="skill__dot" aria-hidden="true"></span>Comercio electrónico</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="Estrategia empresarial" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>Estrategia empresarial</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="Transformación digital" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>Transformación digital</button></li>
+                <li><button class="skill skill--hollow" type="button" aria-pressed="false" data-skill="Marketing digital" data-u="0">
+                    <span class="skill__dot" aria-hidden="true"></span>Marketing digital</button></li>
+            </ul>
+        </section></div><!--/pr:matrix--></div>
+            </div>
+        </section>
+
+        <section class="block edu" id="formacion" aria-labelledby="h-edu">
+            <div class="wrap">
+                <header class="block__head" data-reveal>
+                    <p class="label">04 · Educación y formación</p>
+                    <h2 class="h2" id="h-edu">De la ingeniería química al código.</h2>
+                </header>
+                <div class="edu__grid" id="edu-grid"><!--pr:edu-grid-->
+        <div class="edu__col">
+            <div><h3 class="list-title">Educación</h3><ul>
+        <li class="row ">
+            <p class="row__when">2013 – 2014</p>
+            <div>
+                <h4 class="row__title">Máster en Diseño de Productos e Instalaciones</h4>
+                <p class="row__sub">Universidad de Sevilla</p>
+                <p class="row__note">Intensificación en instalaciones industriales y de edificación.</p>
+            </div>
+        </li>
+        <li class="row ">
+            <p class="row__when">2005 – 2010</p>
+            <div>
+                <h4 class="row__title">Ingeniero Técnico Industrial, Química Industrial</h4>
+                <p class="row__sub">Universidad de Sevilla</p>
+                <p class="row__note">Ingeniería Química con intensificación en operaciones básicas, análisis químico industrial e instalaciones eléctricas de baja tensión.</p>
+            </div>
+        </li>
+        <li class="row ">
+            <p class="row__when">sept. 2018 – dic. 2018</p>
+            <div>
+                <h4 class="row__title">Philips HealthWorks Startup Program</h4>
+                <p class="row__sub">Philips R&amp;D</p>
+                <p class="row__note">Emprendimiento: pequeña empresa y estrategia empresarial.</p>
+            </div>
+        </li></ul></div>
+            <div><h3 class="list-title">Formación complementaria</h3><ul>
+        <li class="row row--compact">
+            <p class="row__when">2014</p>
+            <div>
+                <h4 class="row__title">Apps móviles con jQuery Mobile y PhoneGap</h4>
+                <p class="row__sub">Estación de Diseño</p>
+                
+            </div>
+        </li>
+        <li class="row row--compact">
+            <p class="row__when">2014</p>
+            <div>
+                <h4 class="row__title">Mobile HTML5</h4>
+                <p class="row__sub">Estación de Diseño</p>
+                
+            </div>
+        </li>
+        <li class="row row--compact">
+            <p class="row__when">2013</p>
+            <div>
+                <h4 class="row__title">Técnico competente para Planes de Autoprotección (RD 393/2007)</h4>
+                <p class="row__sub">Consejo General de la Ingeniería Técnica Industrial</p>
+                
+            </div>
+        </li>
+        <li class="row row--compact">
+            <p class="row__when">2011 – 2012</p>
+            <div>
+                <h4 class="row__title">Curso para jóvenes emprendedores universitarios</h4>
+                <p class="row__sub">EOI Escuela de Organización Industrial</p>
+                
+            </div>
+        </li>
+        <li class="row row--compact">
+            <p class="row__when">2010 – 2011</p>
+            <div>
+                <h4 class="row__title">Técnico Básico en Prevención de Riesgos Laborales</h4>
+                <p class="row__sub">Universidad de Sevilla</p>
+                
+            </div>
+        </li></ul></div>
+        </div>
+        <div class="edu__col">
+            <div><h3 class="list-title">Licencias y certificaciones</h3><ul>
+        <li class="row">
+            <p class="row__when">feb. 2024</p>
+            <div>
+                <h4 class="row__title">AWS Certified Developer – Associate</h4>
+                <p class="row__sub">Amazon Web Services (AWS)</p>
+                <p class="row__note">Vencimiento: feb. 2027</p>
+            </div>
+        </li>
+        <li class="row">
+            <p class="row__when">dic. 2020</p>
+            <div>
+                <h4 class="row__title">Salesforce B2C Commerce Developer</h4>
+                <p class="row__sub">Salesforce</p>
+                <p class="row__note">Vencimiento: dic. 2023</p>
+            </div>
+        </li></ul></div>
+            <div><h3 class="list-title">Idiomas</h3><ul><li class="row row--compact"><div><h4 class="row__title">Inglés C1</h4></div></li></ul></div>
+        </div><!--/pr:edu-grid--></div>
+            </div>
+        </section>
+
+        <section class="block figures" id="cifras" aria-labelledby="h-fig">
+            <div class="wrap">
+                <header class="block__head" data-reveal>
+                    <p class="label">05 · Logros y cifras</p>
+                    <h2 class="h2" id="h-fig">Números del perfil.</h2>
+                </header>
+                <dl class="figures__grid" id="figures"><!--pr:figures-->
+        <div class="fig"><dt class="fig__l">años de experiencia profesional, desde 2012</dt><dd class="fig__n" data-count="14">14</dd></div>
+        <div class="fig"><dt class="fig__l">empresas por las que he pasado</dt><dd class="fig__n" data-count="8">8</dd></div>
+        <div class="fig"><dt class="fig__l">puestos en mi perfil, incluidas unas prácticas y mi etapa independiente</dt><dd class="fig__n" data-count="11">11</dd></div>
+        <div class="fig"><dt class="fig__l">roles de liderazgo: CTO &amp; Development Lead y Engineering Team Lead</dt><dd class="fig__n" data-count="2">2</dd></div>
+        <div class="fig"><dt class="fig__l">certificaciones: Amazon Web Services y Salesforce</dt><dd class="fig__n" data-count="2">2</dd></div><!--/pr:figures--></dl>
+                <div class="projects" id="projects"><!--pr:projects--><h3 class="list-title">Proyectos</h3>
+        <article class="project">
+            <p class="project__when">mar. 2024 – actualidad</p>
+            <h4 class="project__name">La Falla</h4>
+            <div>
+                <p class="project__text">Gestión de Fallas en la Comunidad Valenciana. Compartir documentos, gestionar eventos, timeline de fotos privadas, y comunicarse con otros falleros (entre otras cosas)... más fácil que nunca.</p>
+                <ul class="project__stack"><li>PWA</li><li>Firebase</li><li>Angular</li></ul>
+            </div>
+        </article>
+        <article class="project">
+            <p class="project__when">ago. 2022 – dic. 2022</p>
+            <h4 class="project__name">Mi Finca</h4>
+            <div>
+                <p class="project__text">Software para la gestión de pequeñas ganaderías.</p>
+                <ul class="project__stack"><li>PWA</li><li>Firebase</li><li>React</li></ul>
+            </div>
+        </article>
+        <article class="project">
+            <p class="project__when">nov. 2013 – nov. 2014</p>
+            <h4 class="project__name">Gemedy Safety</h4>
+            <div>
+                <p class="project__text">Software multidispositivo para gestionar y optimizar la respuesta en situaciones de emergencia y evacuación en recintos de alto aforo. Asociado con Seguridad Industrial.</p>
+                <ul class="project__stack"><li>Jquery</li><li>PhoneGap</li><li>HTML5</li><li>CSS3</li></ul>
+            </div>
+        </article><!--/pr:projects--></div>
+            </div>
+        </section>
+
+        <section class="block gallery" id="galeria" aria-labelledby="h-gal">
+            <div class="wrap">
+                <header class="block__head" data-reveal>
+                    <p class="label">06 · Galería</p>
+                    <h2 class="h2" id="h-gal">Fuera del editor.</h2>
+                </header>
+                <ul class="gallery__grid" id="gallery"></ul>
+            </div>
+        </section>
+
+        <section class="block contact" id="contacto" aria-labelledby="h-contact">
+            <div class="wrap">
+                <header class="block__head" data-reveal>
+                    <p class="label">07 · Contacto</p>
+                    <h2 class="h2 h2--xl" id="h-contact">¿Tienes una tarea imposible?</h2>
+                    <p class="lede">Cuéntamela. Respondo por correo o por LinkedIn.</p>
+                </header>
+                <ul class="contact__links" id="contact-links"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <div class="wrap foot__row">
+            <p>Rafael Hernández Navarro · Valencia</p>
+            <p>HTML, CSS y Three.js a mano. Sin frameworks.</p>
+            <p><a href="#inicio">Volver arriba ↑</a></p>
+        </div>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+        <form method="dialog"><button class="lightbox__close" aria-label="Cerrar">Cerrar ×</button></form>
+        <img alt="" id="lightbox-img" width="1200" height="800">
+        <p class="lightbox__cap" id="lightbox-cap"></p>
+    </dialog>
+
+    <noscript>
+        <p class="noscript">Esta web necesita JavaScript para mostrar la trayectoria. Perfil completo en <a href="https://www.linkedin.com/in/rafael-hernandez-navarro/">LinkedIn</a>.</p>
+    </noscript>
+</body>
+</html>
